@@ -27,10 +27,10 @@ module.exports = _.defaultsDeep({
         orm: 'knex',
         client: 'pg',
         connection: {
-          host: process.env.PG_HOST || 'localhost',
-          database: process.env.PG_DB || 'Knex',
-          user: process.env.PG_USER || null,
-          password: process.env.PG_PASSWORD
+          host: 'localhost',
+          database: process.env.POSTGRES_DB || 'Knex',
+          user: process.env.POSTGRES_USER || null,
+          password: process.env.POSTGRES_PASSWORD
         },
         migrate: 'drop'
       }

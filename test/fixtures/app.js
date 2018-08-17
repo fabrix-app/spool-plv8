@@ -26,11 +26,16 @@ module.exports = _.defaultsDeep({
       plv8: {
         orm: 'knex',
         client: 'pg',
+
+        /**
+         * knex connection object
+         * see: http://knexjs.org/#Installation-client
+         */
         connection: {
           host: 'localhost',
-          database: process.env.POSTGRES_DB || 'Knex',
           user: process.env.POSTGRES_USER || null,
-          password: process.env.POSTGRES_PASSWORD
+          password: process.env.POSTGRES_PASSWORD,
+          database: process.env.POSTGRES_DB || 'Knex'
         },
         migrate: 'drop'
       }

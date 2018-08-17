@@ -7,7 +7,7 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Follow @FabrixApp on Twitter][twitter-image]][twitter-url]
 
-require() and execute nodejs code in Postgres with PLV8 and Fabrix. Depends on [spool-knex](https://github.com/fabrixjs/spool-knex).
+require() and execute nodejs code in Postgres with PLV8 and Fabrix. Depends on [spool-knex](https://github.com/fabrix-app/spool-knex).
 
 ## Install
 
@@ -34,7 +34,7 @@ export const main = {
 // config/plv8.ts
 export const plv8 = {
   /**
-   * The name of the database store to use; must be defined in config.database.stores
+   * The name of the database store to use; must be defined in config.stores
    */
   store: 'some-plv8-store'
 }

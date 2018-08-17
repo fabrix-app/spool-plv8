@@ -47,7 +47,7 @@ export class PLV8Spool extends Spool {
   }
 
   configure () {
-    this.log.debug('app.config.main.paths', this.app.config.get('main.paths'))
+    this.log.debug('spool: app.config.main.paths', this.app.config.get('main.paths'))
   }
 
   /**
@@ -56,7 +56,7 @@ export class PLV8Spool extends Spool {
   async initialize () {
     const plconfig = this.app.config.get('plv8')
 
-    this.log.debug('plv8: using store', plconfig.store)
+    this.log.debug('spool: plv8 using store', plconfig.store)
 
     this.plv8 = new PLV8(this.app.spools.knex.stores.get(plconfig.store).knex)
 

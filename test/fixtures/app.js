@@ -20,7 +20,7 @@ module.exports = _.defaultsDeep({
       ]
     },
     models: {
-      migrate: 'none'
+      migrate: 'drop'
     },
     stores: {
       plv8: {

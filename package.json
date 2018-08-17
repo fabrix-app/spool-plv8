@@ -1,6 +1,6 @@
 {
   "name": "@fabrix/spool-plv8",
-  "version": "1.1.0-alpha.1",
+  "version": "1.1.0",
   "description": "Spool: require() and execute nodejs code in Postgres with PLV8 and Fabrix",
   "homepage": "https://fabrix.app",
   "author": {

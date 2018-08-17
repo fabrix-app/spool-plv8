@@ -1,7 +1,7 @@
 import { FabrixService as Service } from '@fabrix/fabrix/dist/common'
 /**
  * @module Plv8Service
- * @description Interact with PLV8 modules from Trails
+ * @description Interact with PLV8 modules from Fabrix
  */
 export class Plv8Service extends Service {
   /**

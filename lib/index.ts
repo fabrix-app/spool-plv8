@@ -1,1 +1,1 @@
-export { Plv8Spool } from './Plv8Spool'
+export { PLV8Spool } from './Plv8Spool'

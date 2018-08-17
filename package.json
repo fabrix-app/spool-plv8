@@ -1,8 +1,8 @@
 {
   "name": "@fabrix/spool-plv8",
-  "version": "1.1.0",
+  "version": "1.1.0-alpha.1",
   "description": "Spool: require() and execute nodejs code in Postgres with PLV8 and Fabrix",
-  "homepage": "http://trailsjs.io",
+  "homepage": "https://fabrix.app",
   "author": {
     "name": "Langa",
     "email": "hello@langa.io",
@@ -35,9 +35,9 @@
     "test"
   ],
   "keywords": [
-    "trails",
-    "trailpack",
-    "trails",
+    "fabrix",
+    "spool",
+    "fabrix",
     "trailjs",
     "postgres",
     "plv8",

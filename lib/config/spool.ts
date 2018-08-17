@@ -1,18 +1,18 @@
 /**
- * Trailpack Configuration
+ * Spool Configuration
  *
- * @see {@link http://trailsjs.io/doc/trailpack/config}
+ * @see {@link https://fabrix.app/doc/spool/config}
  */
 export const spool = {
   type: 'misc',
 
   /**
-   * Configure the lifecycle of this pack; that is, how it boots up, and which
-   * order it loads relative to other trailpacks.
+   * Configure the lifecycle of this spool; that is, how it boots up, and which
+   * order it loads relative to other spools.
    */
   lifecycle: {
     initialize: {
-      listen: [ 'trailpack:knex:initialized' ],
+      listen: [ 'spool:knex:initialized' ],
       emit: []
     }
   }

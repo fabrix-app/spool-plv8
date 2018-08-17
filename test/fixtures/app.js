@@ -13,13 +13,10 @@ module.exports = _.defaultsDeep({
     services: { }
   },
   config: {
-    log: {
-      logger: new smokesignals.Logger('silly')
-    },
     main: {
-      spool: [
+      spools: [
         require('@fabrix/spool-knex').KnexSpool,
-        require('../../dist').Plv8Spool
+        require('../../dist').PLV8Spool
       ]
     },
     models: {
@@ -31,10 +28,11 @@ module.exports = _.defaultsDeep({
         client: 'pg',
         connection: {
           host: process.env.PG_HOST || 'localhost',
-          database: process.env.PG_DB || 'postgres',
-          user: process.env.PG_USER || 'postgres',
+          database: process.env.PG_DB || 'Knex',
+          user: process.env.PG_USER || null,
           password: process.env.PG_PASSWORD
-        }
+        },
+        migrate: 'drop'
       }
     },
     plv8: {

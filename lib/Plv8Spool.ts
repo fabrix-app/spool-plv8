@@ -1,5 +1,5 @@
 import { Spool } from '@fabrix/fabrix/dist/common'
-import * as PLV8 from 'plv8'
+import PLV8 from 'plv8'
 
 import * as config from './config/index'
 import * as pkg from '../package.json'

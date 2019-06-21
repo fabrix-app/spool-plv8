@@ -1,6 +1,6 @@
 {
   "name": "@fabrix/spool-plv8",
-  "version": "1.1.0",
+  "version": "1.6.0",
   "description": "Spool: require() and execute nodejs code in Postgres with PLV8 and Fabrix",
   "homepage": "https://fabrix.app",
   "author": {
@@ -49,21 +49,28 @@
   },
   "devDependencies": {
     "lodash": "^4.11.1",
-    "@fabrix/fabrix": "^1.1.4",
+    "@fabrix/fabrix": "^1.6.3",
     "@fabrix/lint": "^1.0.0-alpha.3",
-    "@fabrix/spool-i18n": "^1.1.0",
-    "@fabrix/spool-knex": "^1.1.0",
+    "@fabrix/spool-i18n": "^1.5.1",
+    "@fabrix/spool-knex": "^1.6.0",
     "@types/node": "~10.3.4",
     "express": "^4.16.3",
     "pg": "^6.4.2",
-    "mocha": "^5",
-    "nyc": "^12.0.2",
+    "mocha": "^6",
+    "nyc": "^14.1.1",
     "smokesignals": "^3.0.4",
     "supertest": "^3.1.0",
     "tslib": "~1.9.0",
-    "tslint": "~5.10.0",
-    "tslint-microsoft-contrib": "~5.0.3",
-    "tsutils": "~2.27.1",
-    "typescript": "~2.8.1"
+    "tslint": "~5.14.0",
+    "tslint-microsoft-contrib": "~6.1.0",
+    "tsutils": "~3.9.1",
+    "typescript": "~3.3.4000"
+  },
+  "peerDependencies": {
+    "@fabrix/fabrix": "^1.6.0"
+  },
+  "engines": {
+    "node": ">= 7.6.0 =< 12.4.0",
+    "npm": ">= 3.10.0"
   }
 }
